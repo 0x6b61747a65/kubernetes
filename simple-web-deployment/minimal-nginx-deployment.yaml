@@ -1,0 +1,28 @@
+# --------------------------- #
+# created with kubectl create #
+# --------------------------- #
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: minimal-nginx-deployment
+  name: minimal-nginx-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: minimal-nginx-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: minimal-nginx-deployment
+    spec:
+      containers:
+      - image: nginx:1.21.3-alpine
+        name: nginx
+        resources: {}
+status: {}

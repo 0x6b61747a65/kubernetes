@@ -1,4 +1,4 @@
-# Kubernetes notes
+# Kubernetes notes - Installing minikube
 
 ## Ubuntu 20.04 install
 
